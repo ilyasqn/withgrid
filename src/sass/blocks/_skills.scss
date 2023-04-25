@@ -1,0 +1,18 @@
+.skills {
+    padding: 0px 0px 120px 0px;
+    .wrapper__blocks {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(100px,270px));
+        grid-template-rows: repeat(2, minmax(100px,270px));
+        grid-auto-rows: 270px;
+        gap: 13px;
+        margin-top: 60px;
+        padding: 0 10px;
+        .blocks {
+            border: 1px solid #000;
+            &__body {
+                padding: 30px 30px 25px 30px;
+            }
+        }
+    }
+}

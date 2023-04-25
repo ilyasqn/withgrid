@@ -1,0 +1,27 @@
+.price {
+    padding: 60px 0 120px 0;
+    &__wrapper {
+        margin-top: 60px;
+        padding: 0 50px;
+        display: grid;
+        grid-template-rows: repeat(3, minmax(20px, 44px));
+        grid-template-columns: repeat(2, minmax(100px, 366px));
+        grid-auto-rows: 44px;
+        gap: 25px 305px;
+    }
+    &__block {
+        display: grid;
+        justify-content: space-between;
+        align-content: space-between;
+        grid-template: 25px 30px/200px 110px;
+    }
+    &__subtext {
+        width: calc(100% + 200px);
+        height: 18px;
+    }
+    &__worth {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

@@ -1,0 +1,12 @@
+.contact {
+    padding: 0 0 92px 0;
+    &__wrapper {
+        padding: 0 35px 0 52px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, minmax(100px, 300px));
+    }
+    &__block {
+        grid-row: 1 / 3;
+    }
+}

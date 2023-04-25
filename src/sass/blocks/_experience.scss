@@ -1,0 +1,58 @@
+.experience {
+    padding: 120px 89px 120px 65px;
+    .education {
+        &__head {
+            position: relative;
+            margin-top: 35px;
+            display: flex;
+            column-gap:20px;
+            align-items: center;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 58px;
+                left: -28px;
+                height: 1px;
+                background-color: #000;
+            }
+            &__photo {
+                padding-left: 43px;
+                @include circle;
+                &:before {
+                    top: 20px;
+                }
+            }
+            &__subtext {
+                font-weight: 500;
+                font-size: 15px;
+                color: #000;
+            }
+        }
+        &__body {
+            margin-top: 12px;
+            padding-left: 43px;
+        }
+        ul {
+            li {
+                list-style-type: none;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    height: 120%;
+                    top: -43px;
+                    left: -28px;
+                    width: 1px;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    .wrapper {
+        padding: 60px 0 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    
+}

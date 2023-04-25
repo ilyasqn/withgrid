@@ -1,0 +1,36 @@
+.smm {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    :nth-child(1) {
+        font-size: 16px;
+        color: #000;
+        writing-mode: vertical-lr;
+        transform: rotate(-180deg);
+    } 
+    &__item {
+        font-weight: 700;
+        &_flex {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            row-gap: 15px;
+        }
+        &_border {
+            border: 2px solid #000;
+            height: 70px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

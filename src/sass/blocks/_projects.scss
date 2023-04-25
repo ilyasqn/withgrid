@@ -1,0 +1,10 @@
+.projects {
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(100px, 280px));
+        grid-template-rows: repeat(2, minmax(100px, 280px));
+        grid-auto-rows: 280px;
+        gap: 5px;
+    }
+}

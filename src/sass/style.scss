@@ -1,0 +1,38 @@
+//libs
+@import "libs/bootstrap-reboot.min";
+
+//base
+
+@import "base/fonts";
+@import "base/variables";
+@import "base/mixins";
+
+
+//blocks
+@import "blocks/main";
+@import "blocks/hamburger.scss";
+@import "blocks/smm.scss";
+@import "blocks/buttons.scss";
+@import "blocks/menu";
+@import "blocks/aboutme";
+@import "blocks/titles";
+@import "blocks/line";
+@import "blocks/experience";
+@import "blocks/skills";
+@import "blocks/percents";
+@import "blocks/projects";
+@import "blocks/price";
+@import "blocks/contact";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+body {
+    font-family: Poppins;
+}

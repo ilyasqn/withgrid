@@ -1,0 +1,57 @@
+// .percent {
+//     padding: 120px 0px 120px 0;
+//     display: grid;
+//     grid-template-columns: repeat(3, minmax(100px, 350px));
+//     grid-template-rows: repeat(2, minmax(100px, 70px));
+//     grid-auto-rows: 70px;
+//     gap: 30px 45px;
+//     &__block {
+//         display: grid;
+//         grid-template: 21px 14px/200px 35px;
+//         justify-content: space-between;
+//         align-content: center;
+//         row-gap: 27px;
+//     }
+//     .percent-line {
+//         width: 100%;
+//         background-color: #E8E4DE;
+//         div {
+//             background-color: $main-color;
+//         }
+//     }
+// }
+.percent {
+    padding: 120px 0px 120px 0;
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 350px));
+        grid-template-rows: repeat(2, minmax(100px, 70px));
+        grid-auto-rows: 70px;
+        gap: 27px 45px;
+        &__item {
+            display: grid;
+            grid-template: 21px 14px/200px 35px;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        &__line {
+            width: calc(100% + 150px);
+            height: 14px;
+            background-color: #E8E4DE;
+            border-radius: 4px;
+            span {
+                display: block;
+                height: 100%;
+                border-radius: 4px;
+                background-color: $main-color;
+            }
+        }
+        &__title {
+            @include circle;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000;
+            font-weight: 700;
+        }
+    }
+}

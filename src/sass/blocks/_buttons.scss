@@ -1,0 +1,27 @@
+.button {
+    background-color: $main-color;
+    padding: 12px 26px;
+    max-width: 100%;
+    font-weight: 700;
+    border: 1px solid $main-color;
+    transition: 0.5s all ease;
+    &_simple {
+        border:none;
+        background-color: inherit;
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border-radius: 30px;
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+    
+    
+}
+#button1 {
+    border-radius: 30px;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 11px;
+    }
+}

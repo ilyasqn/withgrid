@@ -1,0 +1,60 @@
+.title {
+    font-weight: 700;
+    color: #000;
+    &.fz13 {
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 500;
+    }
+    &.fz14 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    &.fz16 {
+        font-size: 16px;
+        line-height: 24px;
+        @include circle;
+    }
+    &.fz20 {
+        position: relative;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 45px;
+        padding-left: 35px;
+        &.circle {
+            &:before {
+                top: 50%;
+                transform: translateY(-50%);
+                left: -35px;
+                position: absolute;
+                content: "";
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+            }
+        }
+    }
+    &.fz36 {
+        line-height: 60px;
+        font-size: 36px;
+    }
+    &.tac {
+        text-align: center;
+    }
+    &.mt20 {
+        margin-top: 20px;
+    }
+    &.mt15 {
+        margin-top: 15px;
+    }
+    &.mt {
+        margin-top: 40px;
+    }
+    &.mt2 {
+        margin-top: 46px;
+    }
+}
+
+
+
