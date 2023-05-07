@@ -7,6 +7,19 @@
 @import "base/variables";
 @import "base/mixins";
 
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+body {
+    position: relative;
+    font-family: Poppins;
+}
 
 //blocks
 @import "blocks/main";
@@ -23,16 +36,6 @@
 @import "blocks/projects";
 @import "blocks/price";
 @import "blocks/contact";
-
-* {
-    margin: 0;
-    padding: 0;
-}
-.container {
-    position: relative;
-    width: 1140px;
-    margin: 0 auto;
-}
-body {
-    font-family: Poppins;
-}
+@import "blocks/pageup";
+@import "blocks/forms";
+@import "blocks/media";

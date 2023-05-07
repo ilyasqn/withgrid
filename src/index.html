@@ -140,7 +140,7 @@
                             <div class="aboutme__box__photo">
                                 <img src="icons/about_me/mobile_dev.svg" alt="#">
                             </div>
-                            <div class="aboutme__box__descr">
+                            <div class="aboutme__box__descr left">
                                 <div class="title_mini">
                                     Разработка приложений
                                 </div>
@@ -307,42 +307,42 @@
                     <div class="percent__block__title">Создание сайтов</div>
                     <div class="percent__block__percent">100%</div>
                     <div class="percent__block__line">
-                        <span style="width: 100%;"></span>
+                        <span></span>
                     </div>
                 </div>
                 <div class="percent__block__item">
                     <div class="percent__block__title">Создание приложений</div>
                     <div class="percent__block__percent">85%</div>
                     <div class="percent__block__line">
-                        <span style="width: 85%;"></span>
+                        <span></span>
                     </div>
                 </div>
                 <div class="percent__block__item">
                     <div class="percent__block__title">Работа с данными</div>
                     <div class="percent__block__percent">90%</div>
                     <div class="percent__block__line">
-                        <span style="width: 90%;"></span>
+                        <span></span>
                     </div>
                 </div>
                 <div class="percent__block__item">
                     <div class="percent__block__title">Креативность</div>
                     <div class="percent__block__percent">75%</div>
                     <div class="percent__block__line">
-                        <span style="width: 75%;"></span>
+                        <span></span>
                     </div>
                 </div>
                 <div class="percent__block__item">
                     <div class="percent__block__title">Создание дизайна</div>
                     <div class="percent__block__percent">90%</div>
                     <div class="percent__block__line">
-                        <span style="width: 90%;"></span>
+                        <span></span>
                     </div>
                 </div>
                 <div class="percent__block__item">
                     <div class="percent__block__title">Soft skills</div>
                     <div class="percent__block__percent">95%</div>
                     <div class="percent__block__line">
-                        <span style="width: 95%;"></span>
+                        <span></span>
                     </div>
                 </div>
             </div>
@@ -354,24 +354,36 @@
             <div class="title fz36 tac">Мои работы</div>
             <div class="line mt25"></div>
             <div class="projects__wrapper">
-                <div class="projects__blocks">
-                    <img src="img/works/uber.jpg" alt="">
-                </div>
-                <div class="projects__blocks">
-                    <img src="img/works/pulse.jpg" alt="">
-                </div>
-                <div class="projects__blocks">
-                    <img src="img/works/bread.jpg" alt="">
-                </div>
-                <div class="projects__blocks">
-                    <img src="img/works/plans.jpg" alt="">
-                </div>
-                <div class="projects__blocks">
-                    <img src="img/works/ipad.jpg" alt="">
-                </div>
-                <div class="projects__blocks">
-                    <img src="img/works/mac.jpg" alt="">
-                </div>
+                <a href="">
+                    <div class="projects__blocks">
+                        <img src="img/works/uber.jpg" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="projects__blocks">
+                        <img src="img/works/pulse.jpg" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="projects__blocks">
+                        <img src="img/works/bread.jpg" alt="">
+                    </div>
+                </a>
+                <a class="vertical" href="">
+                    <div class="projects__blocks">
+                        <img src="img/works/plans.jpg" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="projects__blocks">
+                        <img src="img/works/ipad.jpg" alt="">
+                    </div>
+                </a>
+                <a class="horizontal" href="">
+                    <div class="projects__blocks">
+                        <img src="img/works/mac.jpg" alt="">
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -419,12 +431,44 @@
                 <div class="contact__block">
                     <img src="img/main_photo.jpg" alt="girl">
                 </div>
-                <div class="contact__block__descr"></div>
-                <div class="contact__block__info"></div>
-                <!-- <button class="button"></button> -->
+                <div class="contact__block__descr">
+                    <div class="title fz16">Контакты</div>
+                    <div class="title fz36">Свяжитесь со мной</div>
+                    <div class="line mt4"></div>
+                    <div class="title fz14 mt20 fw700">Любым удобным для вас способом:</div>
+                    <div class="contact__block__wrapper">
+                        <div class="contact__block__item"><a href=""><img src="icons/social/facebook.svg" alt=""></a></div>
+                        <div class="contact__block__item"><a href=""><img src="icons/social/telegram.svg" alt=""></a></div>
+                        <div class="contact__block__item"><a href=""><img src="icons/social/instagram.svg" alt=""></a></div>
+                    </div>
+                    <div class="title fz14 mt20">Или оставьте ваши данные и я сама вам напишу:</div>
+                    <form action="#" class="contact__form">
+                        <div class="contact__input">
+                            <input required name="name" id="name" type="text">
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="contact__input email">
+                            <input required name="email" id="email" type="email">
+                            <label for="email">Ваша почта</label>
+                        </div>
+                        <div class="contact__textarea">
+                            <textarea name="text" id="text"></textarea>
+                            <label for="text">Ваше сообщение</label>
+                        </div>
+                        <div class="contact__triggers">
+                            <div><button id="button2" class="button">Отправить сообщение</button></div>
+                            <div class="contact__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="policy.html">политикой конфиденциальности</a></span></div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
+    <a href="#" class="pageup">
+        <img src="img/free-icon-up-arrow-2626996.png" alt="up">
+    </a>  
     <script src="js/script.js"></script>
 </body>
 </html>
